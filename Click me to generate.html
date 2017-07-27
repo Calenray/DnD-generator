@@ -1,0 +1,38 @@
+<html>
+    <head>
+		<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+		<script src="randomizer.js"></script>
+		<script src="racepic.js"></script>
+		<script src="racepic.js"></script>
+		<link href="styling.css" type="text/css" rel="stylesheet" />
+	
+		<br>
+    	<h2>The All-Powerful DND Character Maker-O-Matic</h2>
+	</head>
+	<hr />
+	<body>
+		<!-- Button to reset built character stats -->
+		<input type="button" onclick="location.reload();" value="Make me a character!" align="middle" />
+		<!--location.reload(); - buildNewChar(); backup for button**-->
+	
+		<!-- These paragraphs are live-editable with cleating a new character, no more document.write()-->
+		<p id="picture"></p>
+		<p id="charfield"></p>
+		
+		
+		
+		<script>
+				//This calls upon the functions in other supportive documents.
+				var racepicked = race[randomrace];
+				makePic();
+				makeNewChar();
+		</script>
+	</body>
+</html>
+
+
+<!--<button onclick="myFunction()">Try it</button>
+
+
+	</body>
+</html>
